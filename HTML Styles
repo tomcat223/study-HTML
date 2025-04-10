@@ -2,6 +2,16 @@
 <html>
 <body>
 
-<h1 style="background-color:Dodgerblue;'>Hello World!</h1>
+<h1 style="background-color:Dodgerblue;">Hello World!</h1>
+
+<p style="background-color:green;"> Hello everyone</p>
+
+<p style="color:dodgerblue;">我正在练习代码
+
+<h3 style="color:dodgerblue;
+border:3px solid tomato;
+background-color:green;">
+我正在学习html（i am study html）
+
 </body>
 </html>
