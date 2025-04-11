@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>test 2 </title>
+</head>
+<body style="background-color:yellow;">
+<p>I am normal</p>
+<p style="color:red;">I am red</p>
+<p style="color:blue;">I am blue</p>
+<p style="font-size:50px;">I am big</p>
+<p style="color:green;font-size:50px;"> i am green</p>
+
+
+
+
+<h1 style="background-color:powderblue;">This is a heading</h1>
+<p style="background-color:tomato;">This is a paragraph.</p>
+<h1 style="font-family:courier;">this is me</h1>
+<p style="font-family:verdana;">this is me</p>
+<p style="font-size:88%;">This is a heading</p>
+<p style="text-align:center;">Centered paragraph.</p>
+<a href="https://www.baidu.com/"
+target="_self">百度</a><br>
+<a href="https://www.baidu.com/"
+target="_blank">百度</a><br>
+<a href="html_images.asp">Images</a><br>
+
+<a href="default.asp">
+    <img src="smiley.gif">
+</a><br>
+
+<a href="https://www.baidu.com/"
+title="GO to baidu">LFG</a><br>
+</body>
+</html>
