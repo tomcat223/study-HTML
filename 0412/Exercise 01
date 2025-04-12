@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>宠物介绍网页</title>
+</head>
+
+<body style="background-color:lightblue;">
+<h1>red tea</h1>
+  
+<img src="whitecat.jpg" alt="a whitecat"
+style="width:500px;height: 500px;">
+
+<p>这是我的宠物，红茶，也叫老白</p>
+
+<ul>
+    <li>fish</li>
+    <li>sleep</li>
+    <li>晒太阳</li>
+</ul>
+
+<a href="https://www.baidu.com/"
+target="_self">点击跳转到百度搜索“宠物护理”</a><br>
+
+<button onclick="alert('谢谢你喜欢我的宠物')">联系我</button>
+
+<p>© 2025 Red Tea 的主人</p>
+
+</body>
+</html>
