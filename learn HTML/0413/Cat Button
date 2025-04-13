@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f7f7f7;
+      padding-top: 50px;
+    }
+
+    .cute-btn {
+      background-color: #ffb6c1;
+      color: #fff;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 0 8px 16px rgba(255, 182, 193, 0.4);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .cute-btn:hover {
+      background-color: #ffa3b1;
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(255, 182, 193, 0.6);
+    }
+
+    .cute-btn:active {
+      transform: scale(0.97);
+    }
+
+    .cute-btn::before {
+      content: '🐾';
+      position: absolute;
+      left: -24px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 22px;
+    }
+
+    .cute-btn::after {
+      content: '🐱';
+      position: absolute;
+      right: -24px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 22px;
+    }
+
+    .meow-message {
+      display: none;
+      background-color: #ffa3b1;
+      position: absolute; /* 绝对定位 */
+	  top: 20px; /* 从顶部20px开始显示 */
+      left: 50%; /* 水平居中 */
+      transform: translateX(-50%); /* 调整位置，使其水平居中 */
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 16px;
+      margin-top: 20px;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>欢迎来到喵星球！😻</h2>
+
+  <button class="cute-btn" id="meowButton">点我喵~</button>
+
+  <div class="meow-message" id="meowMessage">喵呜~ 🐾</div>
+
+  <audio id="meowSound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+
+  <script>
+    // 获取按钮和消息元素
+    const meowButton = document.getElementById('meowButton');
+    const meowMessage = document.getElementById('meowMessage');
+    const meowSound = document.getElementById('meowSound');
+
+    // 按钮点击事件
+    meowButton.addEventListener('click', function() {
+      // 播放喵叫音效
+      meowSound.play();
+
+      // 显示"喵呜~"消息并动画效果
+      meowMessage.style.display = 'inline-block';
+
+      // 2秒后隐藏消息
+      setTimeout(function() {
+        meowMessage.style.display = 'none';
+      }, 2000);
+    });
+  </script>
+
+</body>
+</html>
