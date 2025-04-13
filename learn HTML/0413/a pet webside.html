@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的个人页面</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ffc8dd;
+      color: #a2d2ff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    .intro {
+      margin: 20px 0;
+      padding: 15px;
+      background: linear-gradient(to right, #ffc8dd, #a2d2ff);
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .intro img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #a2d2ff;
+      color: white;
+    }
+
+    .btn {
+     background: linear-gradient(to left, #ffc8dd, #a2d2ff);
+      color: #fff;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 0 8px 16px rgba(255, 182, 193, 0.4);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    }
+
+    .btn:hover  {
+      background-color: #ffa3b1;
+      transform: translateY(+4px);
+      box-shadow: 0 12px 24px rgba(255, 182, 193, 0.6);
+    }
+    .btn:active{
+    transform:scale(0.8);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>欢迎来到汤姆宠物</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="intro">
+      <img src="https://via.placeholder.com/100" alt="我的头像">
+      <h2>你好，这里是汤姆宠物</h2>
+      <p>一家经营了5年的老店</p>
+    </div>
+
+    <h2>店里的服务内容：</h2>
+    <table>
+      <tr>
+        <th>项目</th>
+        <th>价格</th>
+      </tr>
+      <tr>
+        <td>狗洗澡</td>
+        <td>49￥/59￥/69￥</td>
+      </tr>
+      <tr>
+        <td>猫洗澡</td>
+        <td>149￥/159￥/169￥</td>
+      </tr>
+      <tr>
+        <td>狗美容</td>
+        <td>149￥/159￥/169￥</td>
+      </tr>
+    </table>
+
+    <button class="btn" onclick="showMessage()">点击我</button>
+
+    <div id="message" style="display:none; margin-top: 20px; background-color: #f9f9f9; padding: 10px; border-radius: 5px;">
+      <p>欢迎来我的店里交流！😊</p>
+    </div>
+
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
